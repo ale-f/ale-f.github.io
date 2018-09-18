@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="webs.css" />
+    <title>
+      Alexander Faithfull
+    </title>
+    <script>
+      window.onload = function() {
+        let selector = document.getElementById("_language");
+        /* Oh, yeah, this is a robust solution. CSS stylesheets are famously
+           never changed or replaced */
+        let enRule = document.styleSheets[0].cssRules[0];
+        let daRule = document.styleSheets[0].cssRules[1];
+        selector.onclick = function() {
+          if (enRule.style.display == "inherit") {
+            enRule.style.display = "none";
+            daRule.style.display = "inherit";
+            selector.src = "scotland.png";
+            selector.title = "Help! Get me out of here!";
+          } else {
+            daRule.style.display = "none";
+            enRule.style.display = "inherit";
+            selector.src = "dk.png";
+            selector.title = "Siden her kan fordanskes!";
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="section">
+      <h1>
+        Alexander Faithfull
+      </h1>
+    </div>
+    <!-- The flag icons used here have been released into the public domain by
+         Mark James: http://www.famfamfam.com/lab/icons/flags/ -->
+    <img class="selector" id="_language" src="dk.png" title="Siden her kan fordanskes!" />
+    <div class="section" id="who">
+      <div class="image-float-right" style="width: 154px" lang="en-GB">
+        <img src="me.jpg" title="In my defence, it is a very suspicious glass of wine" />
+        Here I am, being skeptical of a glass of wine.
+      </div>
+      <div class="image-float-right" style="width: 154px" lang="da-DK">
+        <img src="me.jpg" title="Det er jo et mistænkeligt glas vin" />
+        Her ser jeg meget skeptisk på et glas vin.
+      </div>
+      <h2 lang="en-GB">
+        Who I am
+      </h2>
+      <h2 lang="da-DK">
+        Hvem jeg er
+      </h2>
+      <p lang="en-GB">
+        I'm a research programmer in the <a href="https://en.itu.dk/research/departments/computer-science-department">Department
+        of Computer Science</a> at the <a href="https://www.itu.dk/">IT
+        University of Copenhagen</a>. My job is to work with researchers to
+        implement and experiment with their ideas.
+      <p lang="da-DK">
+        Jeg er forskningsprogrammør på <a href="https://www.itu.dk/">IT-Universitetet
+        i København</a>s <a href="https://www.itu.dk/forskning/institutter/institut-for-datalogi">Institut
+        for Datalogi</a>. Jeg arbejder med vores forskere for at virkeliggøre og
+        eksperimentere med deres idéer.
+      <p lang="en-GB">
+        I come from Scotland, and have lived in Denmark since December 2011. I
+        speak Danish, for
+        <span class="aside" title="a) languages are cool; b) it was free">some
+        reason</span>.
+      <p lang="da-DK">
+        Jeg kommer oprindeligt fra Skotland, og har boet her i Danmark siden
+        december 2011. Af
+        <span class="aside" title="a) det er sjovt at lære sprog; b) det var på Frederiksbergs regning">en
+        eller anden grund</span> kan jeg dansk. (Det har du måske allerede
+        mærket.)
+      <p lang="pl-PL">
+        Nie mówię po polsku.
+      <p lang="en-GB">
+        I own too many Hawaiian shirts and not enough sensible ones; to the
+        right, you can see me modelling <a href="https://hawaiian-shirt-shop.co.uk/product/hibiscus-mania/">Hibiscus
+        Mania</a>. (I also have it in red!)
+      <p lang="da-DK">
+        Jeg ejer alt for mange hawaiiske skjorter. Til
+        højre fremviser jeg en, der hedder <a href="https://hawaiian-shirt-shop.co.uk/product/hibiscus-mania/">Hibiscus
+        Mania</a>. (Den har jeg også i rød!)
+    </div>
+    <div class="section" id="what">
+      <h2 lang="en-GB">
+        What I've done
+      </h2>
+      <h2 lang="da-DK">
+        Hvad jeg har lavet
+      </h2>
+      <p lang="en-GB">
+        For <a href="https://itu.dk/people/hilde/">Thomas Hildebrandt</a>, I
+        developed <a href="https://github.com/ale-f/big-red">Big Red</a>, an
+        Eclipse-based graphical editor (and a set of reusable libraries and
+        components) for working with
+        <a href="http://bigraph.org/">bigraphs</a>. I presented this work at
+        <a href="http://gcm2012.imag.fr/">GCM 2012</a>. 
+      <p lang="da-DK">
+        For <a href="https://itu.dk/people/hilde/">Thomas Hildebrandt</a>
+        udviklede jeg <a href="https://github.com/ale-f/big-red">Big Red</a>,
+        en Eclipse-baseret grafisk editor (sammen med nogle genanvendelige
+        komponenter) for at arbejde med
+        <a href="http://bigraph.org/">bigrapher</a>. Dette arbejde præsenterede
+        jeg for <a href="http://gcm2012.imag.fr/">GCM 2012</a>.
+      <p lang="en-GB">
+        With <a href="https://itu.dk/people/jebe/">Jesper Bengtson</a>, I work
+        on <a href="https://coqoon.github.io">Coqoon</a>, an Eclipse-based IDE
+        for the <a href="https://coq.inria.fr">Coq</a> proof assistant, built
+        on top of the PhD thesis of <a href="https://github.com/hannesm">Hannes
+        Mehnert</a>. I presented <em>this</em> work at <a href="http://www.etaps.org/2016/tacas">TACAS
+        2016.</a>
+      <p lang="da-DK">
+        Under <a href="https://itu.dk/people/jebe/">Jesper Bengtson</a> arbejder
+        jeg på <a href="https://coqoon.github.io">Coqoon</a>, et
+        Eclipse-baseret integreret udviklingsmiljø til bevisassistenten
+        <a href="https://coq.inria.fr">Coq</a>, der bygges på PhD-arbejdet af
+        <a href="https://github.com/hannesm">Hannes Mehnert</a>. <em>Dette</em>
+        arbejde præsenterede jeg for
+        <a href="http://www.etaps.org/2016/tacas">TACAS 2016.</a>
+      <p lang="en-GB">
+        Worried about getting typecast, I branched away from Eclipse a bit in
+        2016, and now I also work in the <a href="http://sss.projects.itu.dk/">Scalable
+        Similarity Search</a> project with <a href="https://itu.dk/people/maau/">Martin
+        Aumüller</a> to implement high-performance similarity search algorithms
+        and <a href="http://sss.projects.itu.dk/ann-benchmarks/">a benchmarking
+        framework</a> to test them. I presented this framework at
+        <a href="http://www.sisap.org/2017/">SISAP 2017</a>. (There's even
+        <a href="http://www.sisap.org/2017/photo/IMG_9127.JPG">photographic
+        evidence</a>.)
+      <p lang="da-DK">
+        For at undgå »typecasting« (som man tilsyneladende også siger på dansk)
+        som Eclipse-programmør forgrenede jeg mig lidt i 2016, og jeg er nu
+        også med i <a href="http://sss.projects.itu.dk/">Scalable
+        Similarity Search</a>-projektet. Sammen med <a href="https://itu.dk/people/maau/">Martin
+        Aumüller</a> implementerer jeg søgealgoritmer med høj ydeevne, samt
+        <a href="http://sss.projects.itu.dk/ann-benchmarks/">et
+        benchmarkingsystem</a> for at kontrollere, at de fungerer godt.
+        Jeg præsenterede systemet her for <a href="http://www.sisap.org/2017/">SISAP
+        2017</a>. (Det er der <a href="http://www.sisap.org/2017/photo/IMG_9127.JPG">fotografisk
+        bevis</a> på.)
+      <p lang="en-GB">
+        I'm comfortable programming in C, C++, Python, Java, Scala, JavaScript
+        <em>(shudder)</em> and the POSIX shell <em>(even bigger shudder)</em>.
+        I can just about program in OCaml and Standard ML when it's absolutely
+        necessary. (I keep meaning to learn Rust, but I haven't yet. I will!
+        Honestly!)
+      <p lang="da-DK">
+        Jeg har det godt med at programmere på C, C++, Python, Java, Scala,
+        JavaScript (selv om det er lidt uhyggeligt) og POSIX-shell (selv om det
+        er <em>enormt</em> uhyggeligt). Bliver det nødvendigt, kan jeg også
+        programmere på OCaml og Standard ML. (Jeg lærer Rust så snart som
+        muligt. Grin ikke! Det skal jeg! Helt sikkert!)
+    </div>
+    <div class="section" id="bibliography">
+      <h2 lang="en-GB">
+        What I've written
+      </h2>
+      <h2 lang="da-DK">
+        Hvad jeg har skrevet
+      </h2>
+      <p lang="en-GB">
+        Quite apart from all the programs, there are also some papers (all of
+        which I also presented):
+      <p lang="da-DK">
+        Udover programmerne har jeg også skrevet (og præsenteret) nogle få
+        artikler:
+      <ul>
+        <li>
+          <span class="citation" id="ann-2017">
+            <a class="paper-title" href="https://doi.org/10.1007/978-3-319-68474-1_3">ANN-Benchmarks: A Benchmarking Tool for Approximate Nearest Neighbor Algorithms</a>. <span class="paper-authors">Aumüller, M., Bernhardsson, E. & Faithfull, A.</span>. In <span class="paper-venue">SISAP proceedings, LNCS 10609, 2017</span>.
+          </span>
+        <li>
+          <span class="citation" id="coqoon-2017">
+            <a class="paper-title" href="https://dx.doi.org/10.1007/s10009-017-0457-2">Coqoon: an IDE for interactive proof development in Coq</a>. <span class="paper-authors">Faithfull, A., Bengtson, J., Tassi, E. & Tankink, C.</span>. In <span class="paper-venue">International Journal on Software Tools for Technology Transfer, 2017</span>.
+            <span lang="en-GB">(See also the earlier <a href="https://dx.doi.org/10.1007/978-3-662-49674-9_18">TACAS 2016 conference version</a>.)</span>
+            <span lang="da-DK">(Findes også i <a href="https://dx.doi.org/10.1007/978-3-662-49674-9_18">konferenceudgave fra TACAS 2016</a>.)</span>
+          </span>
+        <li>
+          <span class="citation" id="bigred-2013">
+            <a class="paper-title" href="http://dx.doi.org/10.14279/tuj.eceasst.61.835">Big Red: A Development Environment for Bigraphs</a>. <span class="paper-authors">Faithfull, A., Perrone, G. D. & Hildebrandt, T</span>. In <span class="paper-venue">E A S S T Electronic Communications, Vol. 61, 2013</span>.
+          </span>
+      </ul>
+    </div>
+    <div class="section" id="where">
+      <h2 lang="en-GB">
+        Where I am
+      </h2>
+      <h2 lang="da-DK">
+        Hvor jeg findes
+      </h2>
+      <p lang="en-GB">
+        Room 4B11<br />
+        IT University of Copenhagen<br />
+        Rued Langgaards Vej 7<br />
+        DK-2300 Copenhagen S<br />
+        Denmark
+      <p lang="da-DK">
+        Lokale 4B11<br />
+        IT-Universitetet i København<br />
+        Rued Langgaards Vej 7<br />
+        2300 København S<br />
+      <p lang="en-GB">
+        Like every other programmer in the universe, <a href="https://github.com/ale-f">I'm
+        also on GitHub</a>, and &mdash; incredibly &mdash; I even have <em>my
+        own e-mail address</em>: <code>alef</code>. (Oh, you wanted a domain as
+        well? Try the ITU's.)
+      <p lang="da-DK">
+        Ligesom alle andre programmører i vore dage har jeg også <a href="https://github.com/ale-f">en konto hos GitHub</a>, og &mdash; som noget helt vildt &mdash; har jeg også <em>
+        min egen e-mailadresse</em>: <code>alef</code>. (<code>snabel-a</code>
+        ITU's domænenavn.)
+    </div>
+    <hr />
+  </body>
+</html>
