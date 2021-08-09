@@ -1,12 +1,4 @@
-*[lang="en-GB"] {
-  display: inherit;
-}
-
-*[lang="da-DK"] {
-  display: none;
-}
-
-*[lang="pl-PL"] {
+*[lang] {
   display: none;
 }
 
